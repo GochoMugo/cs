@@ -18,8 +18,9 @@ We are using the random number, without casting it to an integer,
 through methods such as `Math.floor(randomNumber * 6) + 1`. This allows us
 to preserve precision right until we determine the face that is up.
 
-As probability, `x`, conforms to the property `0 <= x < 1`, if `x` lies
-in the following segments, the corresponding face is implied to be up:
+As the random number, `x`, is tied to probability, it conforms to the
+property `0 <= x < 1`. Therefore, if `x` lies in the following segments
+(of the probability space), the corresponding face is implied to be up:
 
 1. `0   <= x  <=  1/6`: face 1
 1. `1/6 <  x  <=  2/6`: face 2
