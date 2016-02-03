@@ -1,7 +1,7 @@
 
 # cs
 
-> Stuff on my Computer Science
+> **Computer Science**
 
 
 ## licensing:
