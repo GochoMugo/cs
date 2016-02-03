@@ -1,25 +1,10 @@
 
-# dice
+# Dice simulation
 
-Simulating the rolling of a dice a number of times.
+We are simulating the simple act of rolling a 6-sided dice
+and recording the frequency at which each face turns up, for a
+given number of rolling rounds (by default, `1000`). The application
+is written in Java.
 
-
-## running the application:
-
-### building:
-
-Building the JAR file using maven:
-
-```bash
-$ mvn package
-```
-
-### running:
-
-Run the JAR file, **optionally** passing the number of rounds to roll the
-dice:
-
-```bash
-$ java -jar target/application-x.x.x.jar 1000
-```
-
+More information on the simulation process can be found in
+`report/report.md`.
