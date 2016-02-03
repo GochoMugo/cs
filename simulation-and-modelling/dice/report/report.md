@@ -51,3 +51,24 @@ $ java -jar target/application-x.x.x.jar NUMBER_OF_ROUNDS
 ```
 
 
+## results:
+
+**Sample results:**
+
+```bash
+⇒ java -jar target/application-0.0.0.jar
+ # after 1000 rounds
+
+ Outcome:
+         Side    freq    %
+         ----    ----    -
+
+         1       175     17.5
+         2       196     19.6
+         3       140     14.0
+         4       179     17.9
+         5       147     14.7
+         6       163     16.3
+
+```
+
