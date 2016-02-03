@@ -24,9 +24,10 @@ public class App {
         results = roller.run();
 
         System.out.println(" # after " + rounds + " rounds");
-        System.out.println("\nOutcome:\n\tSide\t%\n\t----\t-\n");
+        System.out.println("\nOutcome:\n\tSide\tfreq\t%\n\t----\t----\t-\n");
         for (int index = 1; index < results.length; index++) {
-            System.out.println("\t" + index + "\t" + results[index]);
+            int result = results[index];
+            System.out.println("\t" + index + "\t" + result + "\t" + roller.percent(result));
         }
     }
 }

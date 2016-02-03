@@ -6,7 +6,7 @@ package dice;
 
 
 public class Roller {
-    private dice.Dice dice;
+    private dice.Dice dice = new Dice();
     private int results[] = {0, 0, 0, 0, 0, 0, 0};
     private int rounds;
 
@@ -23,23 +23,24 @@ public class Roller {
         int index;
 
         for (index = 0; index < this.rounds; index++) {
-            int result = this.dice.roll();
-            int current = this.results[result];
-            this.results[result] = current + 1;
+            double result = this.dice.roll();
+            int face = 6;
+            double interval = 1.0 / 6.0;
+
+            if (result <= interval * 5) { face = 5; }
+            if (result <= interval * 4) { face = 4; }
+            if (result <= interval * 3) { face = 3; }
+            if (result <= interval * 2) { face = 2; }
+            if (result <= interval) { face = 1; }
+
+            int current = this.results[face];
+            this.results[face] = current + 1;
         }
 
-        int stats[] = {0, 0, 0, 0, 0, 0, 0};
-
-        // analyse the results
-        for (index = 0; index < this.results.length; index++) {
-            int percent = this.percent(this.results[index]);
-            stats[index] = percent;
-        }
-
-        return stats;
+        return results;
     }
 
-    private int percent(int current) {
-        return current * 100 / this.rounds;
+    public double percent(int current) {
+        return current * 100.0 / this.rounds;
     }
 }
