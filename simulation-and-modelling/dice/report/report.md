@@ -10,7 +10,10 @@
 
 In each roll, a random number is generated using `Math.Random()`.
 While this produces pseudo-random doubles, we are using it because it
-is basic and readily-available.
+is basic and readily-available. Better generators such as
+[RANDOM.ORG][random], would provide 'more random' (true) numbers.
+
+[random]:https://www.random.org/
 
 ### precision:
 
