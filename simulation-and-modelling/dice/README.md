@@ -1,6 +1,16 @@
 
 # Dice simulation
 
+> The traditional die is cubical, generating a random integer in the
+> range of one to six. A die can be fair; all faces have the same
+> probability of, or unfair otherwise.
+>
+> There are also non-cubical dice with different number of faces,
+> such as tetrahedrons (four faces), octahedrons (eight faces) or
+> dodecahedrons (twelce faces).
+>
+> [View **Dice** on Wikipedia](https://en.wikipedia.org/wiki/Dice)
+
 We are simulating the simple act of rolling a 6-sided dice
 and recording the frequency at which each face turns up, for a
 given number of rolling rounds (by default, `1000`). The application
