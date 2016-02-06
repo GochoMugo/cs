@@ -6,9 +6,13 @@
 **Signals** are used to simulate interrupts, as their handlers are executed
 immediately without waiting for the current subroutine to completed.
 
-The test comprises of a subroutine invoked **first** by `main()` and
-interrupted midway by an interrupt, which invokes the **same** subroutine
-a **second** time.
+The test comprises of a subroutine that increments a static variable, hereby
+referred to as `external` and returns its value. In a more practical
+demonstration, the subroutine would do some more involving computation
+using this variable.
+
+This subroutine is invoked **first** by `main()` and interrupted midway by an
+interrupt, which invokes the **same** subroutine a **second** time.
 
 The first invocation should return a result of `1` in `main()` and
 `2` in the interrupt, for the subroutine to be deemed to have yielded
