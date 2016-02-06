@@ -19,7 +19,7 @@ correct values.
 
 Demonstrating a non-reentrant subroutine:
 
-```bash
+```
 $ ./app/non-reentrant.c
 main: invoking non_reentrant()
 1: incremented external to 1
@@ -40,10 +40,12 @@ that from the second invocation with `2: `.
 The function is non-reentrant as its view of the external variable
 changed during the interrupt, which would lead to an incorrect value.
 Execution of the first invocation resumes only to find the value changed.
+The result from the first invocation, in main(), was expected to be `1`
+but instead is `2`.
 
 A reentrant version of the program above:
 
-```bash
+```
 $ ./app/reentrant.c
 main: invoking reentrant()
 1: incremented external to 1
