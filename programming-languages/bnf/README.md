@@ -1,7 +1,7 @@
 
 # Backus-naur Form (BNF)
 
-> Peter Naur referred to as a metalinguistic formulae,
+> Peter Naur referred to BNF as a metalinguistic formulae,
 >
 > "Sequences of characters enclosed in the bracket <> represent
 > metalinguistic variables whose values are sequences of symbols.
@@ -29,8 +29,8 @@ BNF has inspired several variants to be developed, usually to make it
 more precise and human-readble. The most notable variants, with defined
 specification include:
 
-    - Extended Backus-Naur Form (EBNF)
-    - Augmented Backus-Naur Form (ABNF)
+* Extended Backus-Naur Form (EBNF)
+* Augmented Backus-Naur Form (ABNF)
 
 
 ## specification:
