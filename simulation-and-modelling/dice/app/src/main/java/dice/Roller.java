@@ -27,11 +27,11 @@ public class Roller {
             int face = 6;
             double interval = 1.0 / 6.0;
 
-            if (result <= interval * 5) { face = 5; }
-            if (result <= interval * 4) { face = 4; }
-            if (result <= interval * 3) { face = 3; }
-            if (result <= interval * 2) { face = 2; }
-            if (result <= interval) { face = 1; }
+            if (result < interval * 5) { face = 5; }
+            if (result < interval * 4) { face = 4; }
+            if (result < interval * 3) { face = 3; }
+            if (result < interval * 2) { face = 2; }
+            if (result < interval) { face = 1; }
 
             int current = this.results[face];
             this.results[face] = current + 1;
@@ -42,5 +42,9 @@ public class Roller {
 
     public double percent(int current) {
         return current * 100.0 / this.rounds;
+    }
+
+    public int getRounds() {
+        return this.rounds;
     }
 }

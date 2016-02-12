@@ -25,12 +25,27 @@ As the random number, `x`, is tied to probability, it conforms to the
 property `0 <= x < 1`. Therefore, if `x` lies in the following segments
 (of the probability space), the corresponding face is implied to be up:
 
-1. `0   <= x  <=  1/6`: face 1
-1. `1/6 <  x  <=  2/6`: face 2
-1. `2/6 <  x  <=  3/6`: face 3
-1. `3/6 <  x  <=  4/6`: face 4
-1. `4/6 <  x  <=  5/6`: face 5
-1. `5/6 <  x  <   1`: face 6
+1. `0/6 <=  x  <  1/6`: face 1
+1. `1/6 <=  x  <  2/6`: face 2
+1. `2/6 <=  x  <  3/6`: face 3
+1. `3/6 <=  x  <  4/6`: face 4
+1. `4/6 <=  x  <  5/6`: face 5
+1. `5/6 <=  x  <  6/6`: face 6
+
+### segment intervals:
+
+The random variable generated always lies between 0 (inclusive) and
+1 (exclusive). All of the segments, as shown above, must have equal
+intervals for the dice to be fair.
+
+Therefore, partitioning the space like shown below would be **wrong**.
+
+1. `0/6 <= x <= 1/6`
+1. `1/6 <  x <= 2/6`
+1 `...`
+1. `5/6 < x <= 6/6`
+
+The intervals are **not** equal, making such a dice **unfair**.
 
 ### percent:
 
@@ -69,6 +84,8 @@ $ java -jar target/application-x.x.x.jar NUMBER_OF_ROUNDS
          4       179     17.9
          5       147     14.7
          6       163     16.3
+                 ---     ----
+                 1000    100.0
 
 ```
 

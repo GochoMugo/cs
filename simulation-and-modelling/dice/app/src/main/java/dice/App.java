@@ -8,6 +8,7 @@ public class App {
         dice.Roller roller;
         int rounds = 0;
         int results[];
+        int totalFrequency = 0;
 
         // process command-line args
         if (args.length == 0) {
@@ -27,7 +28,9 @@ public class App {
         System.out.println("\nOutcome:\n\tSide\tfreq\t%\n\t----\t----\t-\n");
         for (int index = 1; index < results.length; index++) {
             int result = results[index];
+            totalFrequency += result;
             System.out.println("\t" + index + "\t" + result + "\t" + roller.percent(result));
         }
+        System.out.println("\t\t---\t---\n\t\t" + totalFrequency + "\t" + roller.percent(totalFrequency));
     }
 }

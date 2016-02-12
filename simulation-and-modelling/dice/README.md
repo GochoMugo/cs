@@ -6,8 +6,8 @@
 > probability of, or unfair otherwise.
 >
 > There are also non-cubical dice with different number of faces,
-> such as tetrahedrons (four faces), octahedrons (eight faces) or
-> dodecahedrons (twelce faces).
+> such as tetrahedrons (four faces), octahedrons (eight faces) and
+> dodecahedrons (twelve faces).
 >
 > [View **Dice** on Wikipedia](https://en.wikipedia.org/wiki/Dice)
 
