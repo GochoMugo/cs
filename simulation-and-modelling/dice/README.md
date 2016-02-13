@@ -18,3 +18,11 @@ is written in Java, and its source code can be found in `app/`.
 
 More information on the simulation process can be found in
 `report/report.md`.
+
+
+## references:
+
+* [Rolling a dice using RANDOM.ORG's True RNG](https://www.random.org/dice/)
+* [The Dice Experiment](http://www.math.uah.edu/stat/apps/DiceExperiment.html)
+* [Simulation of a Dice game](http://people.sc.fsu.edu/~jburkardt/m_src/dice_simulation/dice_simulation.html)
+
