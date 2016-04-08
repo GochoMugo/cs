@@ -20,7 +20,7 @@ These are sample results.
 ⇒ java -jar target/application-0.0.0.jar --sin
 
   # lower bound: 0.000000
-    # upper bound: 3.142857
+  # upper bound: 3.142857
 
 
     n               Sin(n)
