@@ -1,5 +1,5 @@
 
-# Binary Search Algorithm -vs- Linear Search Algorithm
+# Analysis
 
 > An analysis of the complexities of binary and linear search algorithms.
 
@@ -124,29 +124,33 @@ User found:
     </tbody>
 </table>
 
-For the **linear search** algorithm, the best-case scenario happens when the target
-item happens to be in the first position of the list. The worst-case scenario
-happens when the target item is at the last position of the list. *We are
-assuming the list is traversed starting from the beginning of the list.*
+For the **linear search** algorithm, the best-case scenario happens when
+the target item happens to be in the first position of the list, where
+"first" position refers to the first index visited in the search.
+The worst-case scenario happens when the target item is at the last
+position of the list, where the "last" position is the last index to
+be visited.
 
-For the **binary search** algorithm, the Best-case scenario happens when the target
-item happens to be in the exact middle position of the list. The worst-case scenario
-happens when the target item is at either the first or last position of the list. *We
-are assuming that any integer division involved in finding the middle index results to
-the position of the target item*
+For the **binary search** algorithm, the best-case scenario happens when the
+target item happens to be in the exact middle position of the list
+(*we are assuming that any integer division involved in finding the middle
+index results to the position of the target item*). The worst-case scenario
+happens when the target item is at either the first or last position of
+the list.
 
-In reality, items tend to be sparse, therefore the requirement to find a list item in
-random positions is rather important. In this aspect, we would rather choose binary
-search over linear search.
+In reality, items tend to be sparse, making it unsuitable to use linear
+search in such cases. Therefore the requirement to find a list item in
+random positions is rather important.
 
-However, we need to sort the lists before executing a binary search. This cost must be
-accounted for one way or the other. But this cost might be worth it in cases where
-several searches need to be executed on the list. Therefore, the need to execute
-many searches justifies the cost of sorting the list.
+However, we need to sort the lists before executing a binary search. This
+cost must be accounted for one way or the other. But this cost might be
+worth it in cases where several searches need to be executed on the list.
+Therefore, the need to execute many searches justifies the cost of
+sorting the list.
 
-In summary, *with the assumption that the cost of execution of either algorithm is equal, say, k*:
+In summary,
 
-  * Linear search, where the target item occurs in the very first positions, is faster than binary search.
-  * Binary search, where the target item occurs in the middle of the list, is faster than linear search.
-  * Binary search, where the target element is at the very last positions of the list, is faster than linear search.
-  * Cost of linear search grows faster than that of binary search, with regard to problem size.
+  * Linear search, where the target item occurs in the very first positions, is **faster** than binary search.
+  * Binary search, where the target item occurs in the middle of the list, is **faster** than linear search.
+  * Binary search, where the target item occurs in the very last positions, is **faster** than linear search.
+  * Cost of linear search grows **faster** than that of binary search, with regard to problem size.
